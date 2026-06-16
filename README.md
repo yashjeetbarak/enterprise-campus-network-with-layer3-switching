@@ -1,6 +1,6 @@
 # Enterprise Campus Network with Layer 3 Switching
 
-![Banner]( /downloads/Banner)
+![Banner](/screenshots/Banner.jpeg)
 
 ## Project Overview
 Designed and implemented a multi-floor enterprise campus network using Cisco Catalyst switches. The solution provides VLAN segmentation, centralized inter-VLAN routing, DHCP automation, EtherChannel redundancy, and Spanning Tree loop prevention.
