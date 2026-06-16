@@ -43,7 +43,6 @@ A medium-sized enterprise occupies multiple office floors and requires secure de
 ![Floor2](screenshots/07-etherchannel-floor2.png)
 
 ### STP Verification
-![STP](screenshots/08-stp-verification.png)
 ![Root](screenshots/09-stp-root-bridge.png)
 
 ### Layer 3 Routing
@@ -70,4 +69,4 @@ A medium-sized enterprise occupies multiple office floors and requires secure de
 - Layer 3 switching simplifies campus routing design.
 
 ## Author
-Yash Barak
+Yashjeet Barak
