@@ -1,7 +1,7 @@
 # Enterprise Campus Network with Layer 3 Switching
 
 ## Network Topology
-![Topology](<img width="1536" height="1024" alt="WhatsApp Image 2026-06-17 at 12 40 08 AM" src="https://github.com/user-attachments/assets/726f9192-19fb-4302-ba84-981874bb2a63" />
+![Topology](<img width="1536" height="1024" alt="WhatsApp Image 2026-06-17 at 12 40 08 AM" src="https://github.com/user-attachments/assets/c9edfdb6-c2cc-4f95-ae12-71230a0d7075" />
 )
 
 ## Project Overview
