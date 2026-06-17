@@ -10,20 +10,47 @@ A medium-sized enterprise occupies multiple office floors and requires secure de
 
 ## Network Architecture
 
+```text
+                Core Layer
+          +------------------+
+          | Cisco 3560 MLS   |
+          +------------------+
+             ||        ||
+        Po1==||        ||==Po2
+             ||        ||
+
+      Distribution Layer
+   +------------+   +------------+
+   | Floor-1 SW |   | Floor-2 SW |
+   +------------+   +------------+
+
+     /      \          /      \
+   HR      IT      Finance   Sales
+ VLAN10 VLAN20    VLAN30   VLAN40
+```
+
+The network follows a three-tier campus architecture consisting of Core, Distribution, and Access layers.
+
 ### Core Layer
 - Cisco Catalyst 3560 Multilayer Switch
-- Inter-VLAN Routing
-- DHCP Services
+- Centralized Layer 3 routing between VLANs
+- DHCP services for all departments
+- STP Root Bridge for VLANs 10, 20, 30, and 40
+- Aggregated uplinks using LACP EtherChannel
 
 ### Distribution Layer
-- First Floor Switch
-- Second Floor Switch
+- First Floor Distribution Switch
+- Second Floor Distribution Switch
+- Redundant uplinks to the Core Layer
+- VLAN propagation through 802.1Q trunks
+- Traffic aggregation from access switches
 
 ### Access Layer
-- HR Switch
-- IT Switch
-- Finance Switch
-- Sales Switch
+- HR Department Access Switch (VLAN 10)
+- IT Department Access Switch (VLAN 20)
+- Finance Department Access Switch (VLAN 30)
+- Sales Department Access Switch (VLAN 40)
+- End-user connectivity and VLAN membership enforcement
 
 ## VLAN Design
 
