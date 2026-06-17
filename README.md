@@ -74,29 +74,51 @@ The network follows a three-tier campus architecture consisting of Core, Distrib
 ### VLAN Verification
 ![VLAN](screenshots/02-vlan-verification.png)
 
+The campus network was segmented into four logical broadcast domains using VLANs. Departments were isolated to improve security, reduce broadcast traffic, and simplify network management.
+
 ### Trunk Verification
 ![Trunk](screenshots/03-trunk-verification.png)
+
+802.1Q trunk links were configured between the multilayer switch and distribution switches to allow VLAN traffic to traverse the campus network while maintaining VLAN separation.
 
 ### DHCP Services
 ![DHCP](screenshots/04-dhcp-bindings.png)
 
+Centralized DHCP services were configured on the multilayer switch to automatically assign IP addresses, subnet masks, and default gateways to hosts across all VLANs.
+
 ### EtherChannel Verification
 
-The core multilayer switch uses two LACP EtherChannels (Po1 and Po2) to provide redundant high-bandwidth uplinks to the distribution layer.
+![EtherChannel](screenshots/06-etherchannel-floor1)
 
-![EtherChannel](screenshots/05-etherchannel-core.png)
+The core multilayer switch uses two LACP EtherChannels (Po1 and Po2) to provide redundant high-bandwidth uplinks to the distribution layer.
 
 ### STP Verification
 ![Root](screenshots/09-stp-root-bridge.png)
 
+Spanning Tree Protocol (STP) was configured to prevent switching loops and ensure a stable Layer 2 topology.
+
+The verification output confirms successful root bridge election and proper forwarding behavior.
+
 ### Layer 3 Routing
 ![Routing](screenshots/10-routing-table.png)
+
+The Cisco Catalyst 3560 Multilayer Switch performs inter-VLAN routing through Switch Virtual Interfaces (SVIs).
+
+The routing table confirms that all departmental networks are reachable and directly connected.
 
 ### SVI Interfaces
 ![SVI](screenshots/11-svi-verification.png)
 
+SVIs were configured for each VLAN and serve as the default gateways for end devices.
+
+The interface status confirms that all VLAN interfaces are operational and available for routing.
+
 ### End-to-End Connectivity
 ![Ping](screenshots/12-intervlan-connectivity.png)
+
+End-to-end connectivity was successfully validated between devices located in different VLANs.
+
+Successful ICMP replies confirm proper VLAN propagation, Layer 3 routing, DHCP operation, and overall network functionality.
 
 ## Folder Structure
 
