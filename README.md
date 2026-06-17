@@ -84,7 +84,7 @@ The network follows a three-tier campus architecture consisting of Core, Distrib
 
 The core multilayer switch uses two LACP EtherChannels (Po1 and Po2) to provide redundant high-bandwidth uplinks to the distribution layer.
 
-![EtherChannel](screenshots/etherchannel-core.png)
+![EtherChannel](screenshots/05-etherchannel-core.png)
 
 ### STP Verification
 ![Root](screenshots/09-stp-root-bridge.png)
