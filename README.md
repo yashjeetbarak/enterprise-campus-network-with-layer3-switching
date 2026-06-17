@@ -88,7 +88,7 @@ Centralized DHCP services were configured on the multilayer switch to automatica
 
 ### EtherChannel Verification
 
-![EtherChannel](screenshots/06-etherchannel-floor1)
+![EtherChannel](screenshots/06-etherchannel-floor1.png)
 
 The core multilayer switch uses two LACP EtherChannels (Po1 and Po2) to provide redundant high-bandwidth uplinks to the distribution layer.
 
